@@ -1,0 +1,4 @@
+/src
+.prettierignore
+.prettierrc
+.gitlab-ci.yml
