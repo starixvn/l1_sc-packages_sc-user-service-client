@@ -22,13 +22,21 @@ export interface APIError {
 
 export interface AuthorizeResponse {
     authorized: boolean;
-    user: any;
+    user: User;
 }
 
 export interface SignNameResponse {
     isSuccessful: boolean;
     message: string;
-    user: any;
+    user: User;
+}
+
+export interface User {
+    UID: number;
+    avatarId: number;
+    currency: string;
+    name: string;
+    red: number;
 }
 
 export default class Auth {
