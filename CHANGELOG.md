@@ -1,3 +1,11 @@
+## [1.0.2](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.0.1...v1.0.2) (2021-04-06)
+
+
+### Bug Fixes
+
+* move to yarn ([7994585](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/7994585629a0e921b08c524b376191cfb187c1d9))
+* readme ([f5cee92](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/f5cee9281cb2f4eb973e4984401e484b956f7c11))
+
 ## [1.0.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.0.0...v1.0.1) (2021-04-06)
 
 
