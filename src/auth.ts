@@ -39,6 +39,12 @@ export interface User {
     red: number;
 }
 
+export interface GetBalanceResponse {
+    balance: number;
+    errorCode: string | number;
+    errorMessage: string;
+}
+
 export default class Auth {
     private axiosInstance: AxiosInstance;
 
@@ -79,6 +85,17 @@ export default class Auth {
             browserUserAgent: navigator.userAgent
         };
         const response = await this.axiosInstance.post<SignNameResponse>("/auth/signName", request);
+        return response.data;
+    }
+
+    async getBalance(session: string, username: string) {
+        const request = {
+            session,
+            username,
+            browserUserAgent: navigator.userAgent
+        };
+
+        const response = await this.axiosInstance.post<GetBalanceResponse>("/auth/balance", request);
         return response.data;
     }
 }
