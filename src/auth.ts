@@ -7,6 +7,12 @@ export interface SSOResponse {
     ss: string;
 }
 
+export interface Response {
+    errorCode: string;
+    message: string;
+    isSuccessful: boolean;
+}
+
 export interface ReCheckInResponse {
     isSuccessful: boolean;
     message: string;
@@ -39,18 +45,13 @@ export interface User {
     red: number;
 }
 
-export interface GetBalanceResponse {
+export interface GetBalanceResponse extends Response {
     balance: number;
-    errorCode: string | number;
-    errorMessage: string;
+    isDisableAccount: boolean;
 }
 
 export default class Auth {
-    private axiosInstance: AxiosInstance;
-
-    constructor(axiosInstance: AxiosInstance) {
-        this.axiosInstance = axiosInstance;
-    }
+    constructor(readonly axiosInstance: AxiosInstance) {}
 
     async sso(token: string) {
         const response = await this.axiosInstance.get<SSOResponse>(`/auth/sso?token=${token}`);
@@ -63,7 +64,7 @@ export default class Auth {
             username,
             browserUserAgent: navigator.userAgent
         };
-        const response = await this.axiosInstance.post<ReCheckInResponse>("/auth/reCheckIn", request);
+        const response = await this.axiosInstance.post<GetBalanceResponse>("/auth/reCheckIn", request);
         return response.data;
     }
 
@@ -73,7 +74,7 @@ export default class Auth {
             username,
             browserUserAgent: navigator.userAgent
         };
-        const response = await this.axiosInstance.post<AuthorizeResponse>("/auth/authorize", request);
+        const response = await this.axiosInstance.post<AuthorizeResponse | Response>("/auth/authorize", request);
         return response.data;
     }
 
@@ -84,7 +85,7 @@ export default class Auth {
             nickname,
             browserUserAgent: navigator.userAgent
         };
-        const response = await this.axiosInstance.post<SignNameResponse>("/auth/signName", request);
+        const response = await this.axiosInstance.post<AuthorizeResponse | Response>("/auth/signName", request);
         return response.data;
     }
 

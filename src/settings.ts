@@ -13,9 +13,7 @@ export interface UMInfo {
 }
 
 export default class Settings {
-    private axiosInstance: AxiosInstance;
-
-    constructor(axiosInstance: AxiosInstance) {
+    constructor(readonly axiosInstance: AxiosInstance) {
         this.axiosInstance = axiosInstance;
     }
 
