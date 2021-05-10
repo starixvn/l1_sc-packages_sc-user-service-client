@@ -78,6 +78,16 @@ export default class Auth {
         return response.data;
     }
 
+    async verifySession(session: string, username: string) {
+        const request = {
+            session,
+            username,
+            browserUserAgent: navigator.userAgent
+        };
+        const response = await this.axiosInstance.post<Response>("/auth/session/verify", request);
+        return response.data;
+    }
+
     async signName(session: string, username: string, nickname: string) {
         const request = {
             session,
