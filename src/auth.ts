@@ -53,8 +53,8 @@ export interface GetBalanceResponse extends Response {
 export default class Auth {
     constructor(readonly axiosInstance: AxiosInstance) {}
 
-    async sso(token: string) {
-        const response = await this.axiosInstance.get<SSOResponse>(`/auth/sso?token=${token}`);
+    async sso(token: string, system = 1) {
+        const response = await this.axiosInstance.get<SSOResponse>(`/auth/sso?token=${token}&system=${system}`);
         return response.data;
     }
 
