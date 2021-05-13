@@ -88,12 +88,13 @@ export default class Auth {
         return response.data;
     }
 
-    async signName(session: string, username: string, nickname: string) {
+    async signName(session: string, username: string, nickname: string, avatar = 0) {
         const request = {
             session,
             username,
             nickname,
-            browserUserAgent: navigator.userAgent
+            browserUserAgent: navigator.userAgent,
+            avatar
         };
         const response = await this.axiosInstance.post<AuthorizeResponse | Response>("/auth/signName", request);
         return response.data;
