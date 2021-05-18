@@ -2,7 +2,7 @@ import { AxiosInstance } from "axios";
 
 export enum UserSettingKeys {
     quickBet,
-    darkMode
+    theme
 }
 
 export interface Response {
@@ -16,12 +16,12 @@ export default class UserSettings {
         this.axiosInstance = axiosInstance;
     }
 
-    async updateUserSettings(session: string, username: string, settingKeys: UserSettingKeys, value: boolean) {
+    async updateUserSettings(session: string, username: string, settingKey: UserSettingKeys, value: any) {
         const response = await this.axiosInstance.post<Response>("users/settings/update", {
             session,
             username,
             browserUserAgent: navigator.userAgent,
-            key: UserSettingKeys[settingKeys],
+            key: UserSettingKeys[settingKey],
             value
         });
 
