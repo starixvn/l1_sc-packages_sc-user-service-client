@@ -7,6 +7,12 @@ export interface SSOResponse {
     ss: string;
 }
 
+export interface Response {
+    errorCode: string;
+    message: string;
+    isSuccessful: boolean;
+}
+
 export interface ReCheckInResponse extends GetBalanceResponse {
     isDisableAccount: boolean;
     apiError: Response;
