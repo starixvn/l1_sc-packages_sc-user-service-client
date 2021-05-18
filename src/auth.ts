@@ -7,23 +7,9 @@ export interface SSOResponse {
     ss: string;
 }
 
-export interface Response {
-    errorCode: string;
-    message: string;
-    isSuccessful: boolean;
-}
-
-export interface ReCheckInResponse {
-    isSuccessful: boolean;
-    message: string;
-    balance: number;
+export interface ReCheckInResponse extends GetBalanceResponse {
     isDisableAccount: boolean;
-    apiError: APIError;
-}
-
-export interface APIError {
-    errorCode: number | string;
-    errorMessage: string;
+    apiError: Response;
 }
 
 export interface AuthorizeResponse {
@@ -47,7 +33,6 @@ export interface User {
 
 export interface GetBalanceResponse extends Response {
     balance: number;
-    isDisableAccount: boolean;
 }
 
 export default class Auth {
@@ -64,7 +49,7 @@ export default class Auth {
             username,
             browserUserAgent: navigator.userAgent
         };
-        const response = await this.axiosInstance.post<GetBalanceResponse>("/auth/reCheckIn", request);
+        const response = await this.axiosInstance.post<ReCheckInResponse>("/auth/reCheckIn", request);
         return response.data;
     }
 
