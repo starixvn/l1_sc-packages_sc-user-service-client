@@ -29,12 +29,19 @@ export interface SignNameResponse {
     user: User;
 }
 
+export interface UserSettings {
+    quickBet?: boolean;
+    theme: string;
+}
+
 export interface User {
     UID: number;
     avatarId: number;
     currency: string;
     name: string;
     red: number;
+    settings: UserSettings;
+    isSignedInSM: boolean;
 }
 
 export interface GetBalanceResponse extends Response {
