@@ -7,17 +7,15 @@ export interface SSOResponse {
     ss: string;
 }
 
-export interface ReCheckInResponse {
-    isSuccessful: boolean;
+export interface Response {
+    errorCode: string;
     message: string;
-    balance: number;
-    isDisableAccount: boolean;
-    apiError: APIError;
+    isSuccessful: boolean;
 }
 
-export interface APIError {
-    errorCode: number | string;
-    errorMessage: string;
+export interface ReCheckInResponse extends GetBalanceResponse {
+    isDisableAccount: boolean;
+    apiError: Response;
 }
 
 export interface AuthorizeResponse {
@@ -39,15 +37,15 @@ export interface User {
     red: number;
 }
 
+export interface GetBalanceResponse extends Response {
+    balance: number;
+}
+
 export default class Auth {
-    private axiosInstance: AxiosInstance;
+    constructor(readonly axiosInstance: AxiosInstance) {}
 
-    constructor(axiosInstance: AxiosInstance) {
-        this.axiosInstance = axiosInstance;
-    }
-
-    async sso(token: string) {
-        const response = await this.axiosInstance.get<SSOResponse>(`/auth/sso?token=${token}`);
+    async sso(token: string, system = 1) {
+        const response = await this.axiosInstance.get<SSOResponse>(`/auth/sso?token=${token}&system=${system}`);
         return response.data;
     }
 
@@ -67,18 +65,40 @@ export default class Auth {
             username,
             browserUserAgent: navigator.userAgent
         };
-        const response = await this.axiosInstance.post<AuthorizeResponse>("/auth/authorize", request);
+        const response = await this.axiosInstance.post<AuthorizeResponse | Response>("/auth/authorize", request);
         return response.data;
     }
 
-    async signName(session: string, username: string, nickname: string) {
+    async verifySession(session: string, username: string) {
+        const request = {
+            session,
+            username,
+            browserUserAgent: navigator.userAgent
+        };
+        const response = await this.axiosInstance.post<Response>("/auth/session/verify", request);
+        return response.data;
+    }
+
+    async signName(session: string, username: string, nickname: string, avatar = 0) {
         const request = {
             session,
             username,
             nickname,
+            browserUserAgent: navigator.userAgent,
+            avatar
+        };
+        const response = await this.axiosInstance.post<AuthorizeResponse | Response>("/auth/signName", request);
+        return response.data;
+    }
+
+    async getBalance(session: string, username: string) {
+        const request = {
+            session,
+            username,
             browserUserAgent: navigator.userAgent
         };
-        const response = await this.axiosInstance.post<SignNameResponse>("/auth/signName", request);
+
+        const response = await this.axiosInstance.post<GetBalanceResponse>("/auth/balance", request);
         return response.data;
     }
 }

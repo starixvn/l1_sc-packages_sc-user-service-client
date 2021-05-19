@@ -1,6 +1,6 @@
 {
     "name": "sc-user-service-client",
-    "version": "1.0.2",
+    "version": "1.0.3-beta.11",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": "https://git3.nexdev.net/sc-packages/sc-user-service-client.git",
@@ -17,7 +17,6 @@
         "betaver": "npm version prerelease --preid beta",
         "pub": "npm publish --registry http://npm.lumigame.com",
         "pubbeta": "npm publish --registry http://npm.lumigame.com --tag beta",
-        "unpublish": "npm unpublish --force sc-base-database",
         "semantic-release": "semantic-release"
     },
     "devDependencies": {
