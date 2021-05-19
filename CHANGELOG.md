@@ -1,3 +1,20 @@
+# [1.1.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.0.2...v1.1.0) (2021-05-19)
+
+
+### Bug Fixes
+
+* add system when sso ([f3b7a33](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/f3b7a33d7384fa09372661182421776c002cda41))
+* add verify session ([974a666](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/974a666a3ad69231abc3e2b85a0515348079254f))
+* recheckin ([48fd97f](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/48fd97f02b1c115f2e3bfc25dded8b252e80ab8d))
+* remove unpublish ([b3b7d89](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/b3b7d89b62e80d2acb054da6793423f0df374cfb))
+
+
+### Features
+
+* add avatar ([98c718e](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/98c718ee2f6d0cd0cc181dd6cda419aa741c662c))
+* get settings and balance ([6bb2c95](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/6bb2c95e3aa0448b8959a9307c83cf5ac7bec912))
+* multiple languages ([d62571f](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/d62571f88e11b3af5f1857947a5c7fae23c50bb5))
+
 ## [1.0.2](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.0.1...v1.0.2) (2021-04-06)
 
 
