@@ -1,3 +1,17 @@
+# [1.2.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.1.0...v1.2.0) (2021-05-26)
+
+
+### Bug Fixes
+
+* implement first log in SM request ([48c59db](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/48c59db1dfc127bb515085ee42ae6ea236a70ff5))
+* update settings key darkMode to theme ([e0b29ef](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/e0b29ef9b0c4f50e306e924a3d71ff859f844b10))
+* update user interface ([0c535e3](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/0c535e3cac4502b6203e1c2b5905edbd3260b41a))
+
+
+### Features
+
+* add user settings ([f3a5c06](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/f3a5c069c99791d23c99fabfcbc959bd5024c055))
+
 # [1.1.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.0.2...v1.1.0) (2021-05-19)
 
 
