@@ -13,6 +13,7 @@ export interface SSOResponse {
     language: string;
     ss: string;
     memberName: string;
+    umInfo: UMInfo;
 }
 
 export interface Response {
