@@ -1,10 +1,8 @@
 import { AxiosInstance } from "axios";
 
 export interface UMInfo {
-    time: Date;
-    start: Date;
-    end: Date;
-    finish: boolean;
+    startTime: Date;
+    endTime: Date;
 }
 
 export interface SSOResponse {
