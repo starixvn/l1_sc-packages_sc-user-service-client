@@ -52,6 +52,7 @@ export interface User {
     red: number;
     settings: UserSettings;
     isSignedInSM: boolean;
+    offerGames: number[];
 }
 
 export interface GetBalanceResponse extends Response {
