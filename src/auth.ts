@@ -1,16 +1,26 @@
 import { AxiosInstance } from "axios";
 
+export interface UMInfo {
+    startTime: Date;
+    endTime: Date;
+}
+
 export interface SSOResponse {
     isAuthenticated: boolean;
     username: string;
     language: string;
     ss: string;
+    memberName: string;
+    isUM: boolean;
+    umInfo: UMInfo;
 }
 
 export interface Response {
     errorCode: string;
     message: string;
     isSuccessful: boolean;
+    isUM: boolean;
+    umInfo: UMInfo;
 }
 
 export interface ReCheckInResponse extends GetBalanceResponse {
@@ -42,6 +52,7 @@ export interface User {
     red: number;
     settings: UserSettings;
     isSignedInSM: boolean;
+    offerGames: number[];
 }
 
 export interface GetBalanceResponse extends Response {
