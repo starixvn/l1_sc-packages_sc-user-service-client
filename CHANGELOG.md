@@ -1,3 +1,17 @@
+# [1.3.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.2.0...v1.3.0) (2021-10-07)
+
+
+### Bug Fixes
+
+* super players um ([ec2e175](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/ec2e17555e6d71ca076482411c80ace68897d8a8))
+* super players um ([bd33818](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/bd3381836656c2964763d5393b219f5bd26c633b))
+* update Um info properties name ([c09896a](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/c09896a12c25d7affb77c4418bff04fbe1a7c93f))
+
+
+### Features
+
+* add offerGames ([9b5eceb](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/9b5eceb3547e3f5ee108041439b496eff345a68b))
+
 # [1.2.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.1.0...v1.2.0) (2021-05-26)
 
 
