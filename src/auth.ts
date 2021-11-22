@@ -26,6 +26,8 @@ export interface Response {
 export interface ReCheckInResponse extends GetBalanceResponse {
     isDisableAccount: boolean;
     apiError: Response;
+    availSpins: number;
+    scoins: number;
 }
 
 export interface AuthorizeResponse {
