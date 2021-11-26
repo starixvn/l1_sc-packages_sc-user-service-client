@@ -1,3 +1,11 @@
+## [1.3.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.3.0...v1.3.1) (2021-11-26)
+
+
+### Bug Fixes
+
+* return scoins/available spins to recheckin response ([6cae7c8](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/6cae7c8606f8440ae1651b9748ea1b696ca1a772))
+* return scoins/avalable spins ([a358c80](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/a358c80d6d682c8b2cea314ad9abf4352190f2df))
+
 # [1.3.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.2.0...v1.3.0) (2021-10-07)
 
 
