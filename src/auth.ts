@@ -26,6 +26,8 @@ export interface Response {
 export interface ReCheckInResponse extends GetBalanceResponse {
     isDisableAccount: boolean;
     apiError: Response;
+    availSpins: number;
+    scoins: number;
 }
 
 export interface AuthorizeResponse {
@@ -53,6 +55,8 @@ export interface User {
     settings: UserSettings;
     isSignedInSM: boolean;
     offerGames: number[];
+    availSpins: number;
+    scoins: number;
 }
 
 export interface GetBalanceResponse extends Response {
