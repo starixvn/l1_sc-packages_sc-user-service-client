@@ -13,6 +13,7 @@ export interface SSOResponse {
     memberName: string;
     isUM: boolean;
     umInfo: UMInfo;
+    playerName: string;
 }
 
 export interface Response {
