@@ -60,7 +60,7 @@ export interface User {
 }
 
 export interface BetSettingResponse {
-    betSettingGames: number[];
+    settingGames: number[];
 }
 
 export interface GetBalanceResponse extends Response {
@@ -128,14 +128,14 @@ export default class Auth {
         return response.data;
     }
 
-    async getBetSettingGames(session: string, username: string) {
+    async getSettingGames(session: string, username: string) {
         const request = {
             session,
             username,
             browserUserAgent: navigator.userAgent
         };
 
-        const response = await this.axiosInstance.post<BetSettingResponse>("/auth/getBetSettingGames", request);
+        const response = await this.axiosInstance.post<BetSettingResponse>("/auth/getSettingGames", request);
         return response.data;
     }
 }
