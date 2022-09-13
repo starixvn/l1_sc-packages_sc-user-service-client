@@ -60,7 +60,7 @@ export interface User {
 }
 
 export interface BetSettingResponse {
-    games: number[];
+    betSettingGames: number[];
 }
 
 export interface GetBalanceResponse extends Response {
