@@ -59,6 +59,10 @@ export interface User {
     scoins: number;
 }
 
+export interface BetSettingResponse {
+    settingGames: number[];
+}
+
 export interface GetBalanceResponse extends Response {
     balance: number;
 }
@@ -121,6 +125,17 @@ export default class Auth {
         };
 
         const response = await this.axiosInstance.post<GetBalanceResponse>("/auth/balance", request);
+        return response.data;
+    }
+
+    async getSettingGames(session: string, username: string) {
+        const request = {
+            session,
+            username,
+            browserUserAgent: navigator.userAgent
+        };
+
+        const response = await this.axiosInstance.post<BetSettingResponse>("/auth/getSettingGames", request);
         return response.data;
     }
 }
