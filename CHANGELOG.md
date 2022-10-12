@@ -1,3 +1,17 @@
+# [1.4.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.3.1...v1.4.0) (2022-10-12)
+
+
+### Bug Fixes
+
+* naming ([03c466b](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/03c466b92f6f3e39360abd65ddd3bd4075b77bfa))
+* update get setting games ([1a7d9fe](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/1a7d9fe948b74ead7ab549cb0d6b7ee820d81606))
+* update package ([98adae9](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/98adae9189e6dd3ffa3f0a6304de707b78190a27))
+
+
+### Features
+
+* get bet setting ([9023319](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/9023319fdfe092673dc0f271c20c842137449209))
+
 ## [1.3.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.3.0...v1.3.1) (2021-11-26)
 
 
