@@ -57,6 +57,7 @@ export interface User {
     offerGames: number[];
     availSpins: number;
     scoins: number;
+    fractionalOddsFormat: boolean;
 }
 
 export interface BetSettingResponse {
