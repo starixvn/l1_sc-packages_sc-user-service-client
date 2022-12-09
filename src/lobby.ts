@@ -1,0 +1,38 @@
+import { AxiosInstance } from "axios";
+
+export interface GameSetting {
+    gameId: number;
+    bigSize: boolean;
+    newTag: boolean;
+}
+
+export interface GameCategory {
+    name: object;
+    gameSettings: GameSetting[];
+}
+
+export interface LobbyConfigs {
+    name: string;
+    currencyGroupIds: string[];
+    miniPanelGameIds: number[];
+    categories: GameCategory[];
+}
+
+export interface LobbyResponse {
+    lobbyConfigs: LobbyConfigs;
+}
+
+export default class Lobby {
+    constructor(readonly axiosInstance: AxiosInstance) {}
+
+    async getLobbyConfigs(session: string, username: string) {
+        const request = {
+            session,
+            username,
+            browserUserAgent: navigator.userAgent
+        };
+
+        const response = await this.axiosInstance.post<LobbyResponse>("/lobby/configs", request);
+        return response.data;
+    }
+}

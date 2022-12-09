@@ -1,11 +1,13 @@
 import axios from "axios";
 
 import Auth from "./auth";
+import Lobby from "./lobby";
 import UserSettings from "./userSettings";
 
 export default class UserServiceClient {
     private _auth: Auth;
     private _userSettings: UserSettings;
+    private _lobby: Lobby;
 
     constructor(userServiceUrl: string) {
         const axiosInstance = axios.create({
@@ -14,6 +16,7 @@ export default class UserServiceClient {
 
         this._auth = new Auth(axiosInstance);
         this._userSettings = new UserSettings(axiosInstance);
+        this._lobby = new Lobby(axiosInstance);
     }
 
     get auth(): Auth {
@@ -22,5 +25,9 @@ export default class UserServiceClient {
 
     get userSettings(): UserSettings {
         return this._userSettings;
+    }
+
+    get lobby(): Lobby {
+        return this._lobby;
     }
 }
