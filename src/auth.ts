@@ -58,7 +58,7 @@ export interface User {
     availSpins: number;
     scoins: number;
     fractionalOddsFormat: boolean;
-    isShowCurrencyInBalance: boolean;
+    isDisplayPlayerCurrency: boolean;
 }
 
 export interface BetSettingResponse {
