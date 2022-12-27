@@ -1,3 +1,12 @@
+## [1.4.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.4.0...v1.4.1) (2022-12-27)
+
+
+### Bug Fixes
+
+* add fractionalOddsFormat property  to user ([af53b2e](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/af53b2e04f0d00804d7d4756ccebcc1261950ee4))
+* add isShowCurrencyInBalance property  to user ([a879cb0](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/a879cb0f4bf4c80319e4857c715d10c274aecb8b))
+* rename field ([c66531d](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/c66531d9ab300e57fed6409f7e7067b9c1ef866a))
+
 # [1.4.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.3.1...v1.4.0) (2022-10-12)
 
 
