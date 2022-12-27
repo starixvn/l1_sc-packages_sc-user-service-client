@@ -11,11 +11,17 @@ export interface GameCategory {
     gameSettings: GameSetting[];
 }
 
+export interface Banner {
+    gameId: number;
+    displayTime: number;
+}
+
 export interface LobbyConfigs {
     name: string;
     currencyGroupIds: string[];
     miniPanelGameIds: number[];
     categories: GameCategory[];
+    banners: Banner[];
 }
 
 export interface LobbyResponse {
