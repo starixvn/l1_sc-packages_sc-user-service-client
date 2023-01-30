@@ -1,3 +1,16 @@
+# [1.5.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.4.1...v1.5.0) (2023-01-30)
+
+
+### Bug Fixes
+
+* load banners ([790b23b](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/790b23b9e01f161106c81b813fcc56f45c90d583))
+* rebase code & pubbeta ([16eb320](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/16eb320f64cb7790d5cbae63c3bb1ce168293f64))
+
+
+### Features
+
+* add getLobbyConfigs ([0bf7604](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/0bf7604e323e07a1f50119718c3e7b400020ed31))
+
 ## [1.4.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.4.0...v1.4.1) (2022-12-27)
 
 
