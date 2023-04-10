@@ -1,5 +1,4 @@
-import axios from "axios";
-
+import axios from "axios/dist/axios.min.js";
 import Auth from "./auth";
 import Lobby from "./lobby";
 import UserSettings from "./userSettings";

@@ -1,4 +1,4 @@
-import { AxiosInstance } from "axios";
+import { AxiosInstance } from "axios/dist/axios.min.js";
 
 export interface UMInfo {
     startTime: Date;
@@ -13,6 +13,7 @@ export interface SSOResponse {
     memberName: string;
     isUM: boolean;
     umInfo: UMInfo;
+    system: number;
 }
 
 export interface Response {
