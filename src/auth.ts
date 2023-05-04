@@ -68,6 +68,8 @@ export interface BetSettingResponse {
 
 export interface GetBalanceResponse extends Response {
     balance: number;
+    scoins: number;
+    availableSpins: number;
 }
 
 export default class Auth {
