@@ -3,6 +3,7 @@ import { AxiosInstance } from "axios/dist/axios.min.js";
 export interface UMInfo {
     startTime: Date;
     endTime: Date;
+    operatorId: string;
 }
 
 export interface SSOResponse {
@@ -68,8 +69,8 @@ export interface BetSettingResponse {
 
 export interface GetBalanceResponse extends Response {
     balance: number;
-    scoins: number;
-    availableSpins: number;
+    scoins?: number;
+    availableSpins?: number;
 }
 
 export default class Auth {
