@@ -16,12 +16,25 @@ export interface Banner {
     displayTime: number;
 }
 
+export interface Game {
+    id: number;
+
+    name: string;
+}
+
+export interface RoundTimerGame {
+    games: Game[];
+
+    main: number;
+}
+
 export interface LobbyConfigs {
     name: string;
     currencyGroupIds: string[];
     miniPanelGameIds: number[];
     categories: GameCategory[];
     banners: Banner[];
+    roundTimerGame: RoundTimerGame;
 }
 
 export interface LobbyResponse {
