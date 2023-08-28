@@ -1,3 +1,10 @@
+## [1.5.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.5.0...v1.5.1) (2023-08-28)
+
+
+### Bug Fixes
+
+* add roundTimerGame to lobby config ([8f3967b](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/8f3967b96382e1d4d278646ad132c218b56b082d))
+
 # [1.5.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.4.1...v1.5.0) (2023-01-30)
 
 
