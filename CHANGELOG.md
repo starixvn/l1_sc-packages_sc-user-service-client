@@ -1,3 +1,16 @@
+# [1.6.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.5.1...v1.6.0) (2023-08-31)
+
+
+### Bug Fixes
+
+* add operator id in umInfo ([03b3eec](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/03b3eec26672a07f076d4cf587f9b3bc8a001cbe))
+* fix the way declare module when client base integrate cocos ([1fd66e1](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/1fd66e1cd24633f67529b8d0f1ab39fe22f075c2))
+
+
+### Features
+
+* add setting ([af08399](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/af0839920cbe3fd3466990b451d6f3d07a347d88))
+
 ## [1.5.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.5.0...v1.5.1) (2023-08-28)
 
 
