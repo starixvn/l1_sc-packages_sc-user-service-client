@@ -51,4 +51,15 @@ export default class UserSettings {
 
         return response.data;
     }
+
+    async updateAvatar(session: string, username: string, avatarId: number) {
+        const response = await this.axiosInstance.post<Response>("users/updateAvatar", {
+            session,
+            username,
+            avatarId,
+            browserUserAgent: navigator.userAgent
+        });
+
+        return response.data;
+    }
 }
