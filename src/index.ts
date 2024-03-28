@@ -4,7 +4,14 @@ import Lobby from "./lobby";
 import Setting from "./setting";
 import UserSettings from "./userSettings";
 
-export default class UserServiceClient {
+export interface IUserServiceClient {
+    auth: Auth;
+    userSettings: UserSettings;
+    lobby: Lobby;
+    setting: Setting;
+}
+
+export default class UserServiceClient implements IUserServiceClient {
     private _auth: Auth;
     private _userSettings: UserSettings;
     private _lobby: Lobby;
