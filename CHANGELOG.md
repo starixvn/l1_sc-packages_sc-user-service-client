@@ -1,3 +1,11 @@
+## [1.6.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.6.0...v1.6.1) (2024-05-13)
+
+
+### Bug Fixes
+
+* update avatar ([23e32ac](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/23e32ac7bae5d0f6e9472dd50b467d9884ed0d9c))
+* update package version ([231ab45](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/231ab45747972fdb3c3b9b63212a8c1ad3efe0ea))
+
 # [1.6.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.5.1...v1.6.0) (2023-08-31)
 
 
