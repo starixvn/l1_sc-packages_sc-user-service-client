@@ -11,6 +11,12 @@ export interface ChipInfo {
     color: string;
 }
 
+export interface CurrencyGroupGameResponse {
+    minBet: number;
+    maxBet: number;
+    chips: string[];
+}
+
 export default class Setting {
     constructor(readonly axiosInstance: AxiosInstance) {
         this.axiosInstance = axiosInstance;
@@ -23,6 +29,17 @@ export default class Setting {
             browserUserAgent: navigator.userAgent
         };
         const response = await this.axiosInstance.post<SettingResponse>("/settings", request);
+
+        return response.data;
+    }
+
+    async getGameSettingsByCurrencyGroup(session: string, username: string) {
+        const request = {
+            session,
+            username,
+            browserUserAgent: navigator.userAgent
+        };
+        const response = await this.axiosInstance.post<SettingResponse>("/settings/currency-group-game", request);
 
         return response.data;
     }
