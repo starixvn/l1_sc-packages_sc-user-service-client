@@ -39,7 +39,10 @@ export default class Setting {
             username,
             browserUserAgent: navigator.userAgent
         };
-        const response = await this.axiosInstance.post<SettingResponse>("/settings/currency-group-game", request);
+        const response = await this.axiosInstance.post<CurrencyGroupGameResponse>(
+            "/settings/currency-group-game",
+            request
+        );
 
         return response.data;
     }
