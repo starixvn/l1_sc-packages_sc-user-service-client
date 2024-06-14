@@ -33,11 +33,12 @@ export default class Setting {
         return response.data;
     }
 
-    async getGameSettingsByCurrencyGroup(session: string, username: string) {
+    async getGameSettingsByCurrencyGroup(session: string, username: string, gameIds: number[]) {
         const request = {
             session,
             username,
-            browserUserAgent: navigator.userAgent
+            browserUserAgent: navigator.userAgent,
+            gameIds
         };
         const response = await this.axiosInstance.post<CurrencyGroupGameResponse>(
             "/settings/currency-group-game",
