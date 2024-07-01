@@ -47,6 +47,16 @@ export interface UserSettings {
     quickBet?: boolean;
     theme: string;
 }
+export interface OfferGame {
+    gameId: number;
+    minBet: number;
+    maxBet: number;
+    maxBetPerChoices: object;
+}
+
+export interface EnabledGame {
+    gameId: number;
+}
 
 export interface User {
     UID: number;
@@ -56,7 +66,8 @@ export interface User {
     red: number;
     settings: UserSettings;
     isSignedInSM: boolean;
-    offerGames: number[];
+    offerGames: OfferGame[];
+    enabledGames: EnabledGame[];
     availSpins: number;
     scoins: number;
     fractionalOddsFormat: boolean;
