@@ -68,6 +68,7 @@ export interface User {
     scoins: number;
     fractionalOddsFormat: boolean;
     isDisplayPlayerCurrency: boolean;
+    currencyGroup: string;
 }
 
 export interface BetSettingResponse {
