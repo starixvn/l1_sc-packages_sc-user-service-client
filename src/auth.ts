@@ -54,10 +54,6 @@ export interface OfferGame {
     maxBetPerChoices: object;
 }
 
-export interface EnabledGame {
-    gameId: number;
-}
-
 export interface User {
     UID: number;
     avatarId: number;
@@ -67,7 +63,7 @@ export interface User {
     settings: UserSettings;
     isSignedInSM: boolean;
     offerGames: OfferGame[];
-    enabledGames: EnabledGame[];
+    enabledGameIds: number[];
     availSpins: number;
     scoins: number;
     fractionalOddsFormat: boolean;
