@@ -1,3 +1,11 @@
+# [1.7.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.6.1...v1.7.0) (2024-07-16)
+
+
+### Features
+
+* add enable games, update offer game type ([d1ce7d0](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/d1ce7d0a9c31ec091931771eab090880521af9b1))
+* update get enable game ids ([4ccdbd0](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/4ccdbd0ce1a75fc167a57cc6f51f367e3a38f544))
+
 ## [1.6.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.6.0...v1.6.1) (2024-05-13)
 
 
