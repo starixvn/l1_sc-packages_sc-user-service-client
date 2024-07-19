@@ -1,3 +1,17 @@
+# [1.8.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.7.0...v1.8.0) (2024-07-19)
+
+
+### Bug Fixes
+
+* add gameIds into request getGameSettingsByCurrencyGroup ([3b137fa](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/3b137fa195a38949450c5b4228b5d36618652b5c))
+* return currency group name when authorize ([89dd678](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/89dd678d5f34a17bb05a6a23e2e72a93de5109fe))
+* update type of response ([7adbafe](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/7adbafef93f6c93f5b6fd957f6a868dadf3a5dde))
+
+
+### Features
+
+* add api get game setting by currency group ([812266c](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/812266cb1f14f2f23974152f6f1442a4b484a6b4))
+
 # [1.7.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.6.1...v1.7.0) (2024-07-16)
 
 
