@@ -41,6 +41,16 @@ export interface LobbyResponse {
     lobbyConfigs: LobbyConfigs;
 }
 
+export interface DirectLobbyConfigs {
+    name: string;
+    currencyGroupIds: string[];
+    gameIds: number[];
+}
+
+export interface DirectLobbyResponse {
+    directLobbyConfigs: DirectLobbyConfigs;
+}
+
 export default class Lobby {
     constructor(readonly axiosInstance: AxiosInstance) {}
 
@@ -52,6 +62,17 @@ export default class Lobby {
         };
 
         const response = await this.axiosInstance.post<LobbyResponse>("/lobby/configs", request);
+        return response.data;
+    }
+
+    async getDirectLobbyConfigs(session: string, username: string) {
+        const request = {
+            session,
+            username,
+            browserUserAgent: navigator.userAgent
+        };
+
+        const response = await this.axiosInstance.post<DirectLobbyResponse>("/lobby/direct-configs", request);
         return response.data;
     }
 }
