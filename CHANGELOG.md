@@ -1,3 +1,10 @@
+## [1.8.1](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.8.0...v1.8.1) (2025-03-05)
+
+
+### Bug Fixes
+
+* get direct lobby ([74d8543](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/74d8543620657d1e056cde895b62b750b97363a3))
+
 # [1.8.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.7.0...v1.8.0) (2024-07-19)
 
 
