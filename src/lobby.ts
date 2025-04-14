@@ -45,6 +45,7 @@ export interface DirectLobbyConfigs {
     name: string;
     currencyGroupIds: string[];
     gameIds: number[];
+    newGames: number[];
 }
 
 export interface DirectLobbyResponse {
