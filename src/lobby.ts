@@ -34,6 +34,7 @@ export interface LobbyConfigs {
     miniPanelGameIds: number[];
     categories: GameCategory[];
     banners: Banner[];
+    centerBanners: Banner[];
     roundTimerGame: RoundTimerGame;
 }
 
