@@ -1,3 +1,10 @@
+# [1.10.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.9.0...v1.10.0) (2025-07-16)
+
+
+### Features
+
+* add center banners ([a49fe93](https://git3.nexdev.net/sc-packages/sc-user-service-client/commit/a49fe931506371e53ce9ae4f19de43479735a644))
+
 # [1.9.0](https://git3.nexdev.net/sc-packages/sc-user-service-client/compare/v1.8.0...v1.9.0) (2025-05-08)
 
 
